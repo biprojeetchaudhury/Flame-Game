@@ -7,18 +7,24 @@
     <title>FLAME Game</title>
 
     
+    <link rel="stylesheet" href= "{{ url_for('static', filename='style.css') }}">
+    
 </head>
 <body>
-    <h1>FLAME Game</h1>
-    <form method="post">
-        <label for="name1">Your Name:</label>
-        <input type="text" id="name1" name="name1" required>
-        <br><br>
-        <label for="name2">Your Crush's Name:</label>
-        <input type="text" id="name2" name="name2" required>
-        <br><br>
-        <button type="submit">Find Out!</button>
-    </form>
+    <div class="container">
+        <h1>FLAME Game</h1>
+        <form method="post">
+            <div class="name_container">
+                <label for="name1">Your Name:</label>
+                <input type="text" id="name1" name="name1" required>
+                <br><br>
+                <label for="name2">Your Crush's Name:</label>
+                <input type="text" id="name2" name="name2" required>
+            </div>
+            <br><br>
+            <button type="submit">Find Out!</button>
+        </form>
+    </div>
 
     {% if result %}
         <h2>{{ name1 }} and {{ name2 }}'s relationship will end in {{ result }}</h2>
