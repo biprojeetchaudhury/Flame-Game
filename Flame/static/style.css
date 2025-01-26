@@ -9,7 +9,7 @@ body{
     margin: 50px auto;
     text-align: center;
     padding: 20px;
-    background: #9e41d48b;
+    background: #a041d78b;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -22,16 +22,54 @@ h1{
 }
 
 .name_container{
+    /* background-color: rgba(0, 0, 255, 0.285); */
+    border-radius: 8px;
     padding: 10px;
     text-align: left;
     justify-content: center;
 }
 
 button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: rgb(255, 219, 254);
+    -webkit-text-stroke: #ff00c3 0.2px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border-color: blue;
     padding: 10px 20px;
     cursor: pointer;
 }
 
+button:hover{
+    background-color: #ff3a78c5;
+    transition: 0.6s ease;
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17px;
+    -webkit-text-stroke: #000000e1 0.5px;
+    color: rgba(255, 0, 0, 0.82);
+    background-color: #e2a0ff88;
+    border-radius: 40px;
+}
+
+input{
+    font-size: 15px;
+}
+
 h2{
     text-align: center;
+    padding: 20px;
+    font-family: ubuntu, sans-serif;
+    font-weight:bold;
+    color: rgb(250, 255, 209);
+    background-color: #ff0040a4;
+    background-image: linear-gradient(rgba(255, 0, 64, 0.5), rgba(255, 0, 64, 0.5)), url(images.jpg);
+    border-radius: 14px;
+    text-shadow: 2px 2px 5px rgba(51, 0, 92, 0.5);
 }
+
